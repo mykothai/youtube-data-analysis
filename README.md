@@ -44,8 +44,11 @@ This project revolves around the above two questions, therefore, there are two p
 
 5) Refer to our paper for a thorough explanation of the findings of this analysis.
 
-### Building Scripts for Question 4:
+### Building Scripts for Question 2:
 
+1)
+2)
+3)
 
 ## Contributors:
 - Kaveh Alemi, kalemi@sfu.ca

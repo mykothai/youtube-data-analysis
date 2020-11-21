@@ -17,14 +17,14 @@ We interested in the correlation between Covid-19 and the properties of trending
 
 
 ## Required Libraries: 
-Pandas
-json
-matplotlib.pyplot
-numpy
-scipy
-time
-statsmodels.stats.multicomp
-sys
+- Pandas
+- json
+- matplotlib.pyplot
+- numpy
+- scipy
+- time
+- statsmodels.stats.multicomp
+- sys
 
 
 ## Building the Project: 

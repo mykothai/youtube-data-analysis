@@ -12,19 +12,19 @@ We interested in the correlation between Covid-19 and the properties of trending
 
 1. Have the view count of the different trending YouTube categories changed significantly in 2018 versus 2020 in  Canada, Great Britain, and USA?
 
-1. Have the ratio of likes versus views of the different trending YouTube categories changed significantly in 2018 versus 2020 in  Canada, Great Britain, and USA?
+2. Have the ratio of likes versus views of the different trending YouTube categories changed significantly in 2018 versus 2020 in  Canada, Great Britain, and USA?
 
 
 ## Required Libraries: 
-pandas
-json
-matplotlib.pyplot
-numpy
-scipy
-time
-statsmodels.stats.multicomp
-sys
-datetime
+- pandas
+- json
+- matplotlib.pyplot
+- numpy
+- scipy
+- time
+- statsmodels.stats.multicomp
+- sys
+- datetime
 
 
 ## Building the Project: 

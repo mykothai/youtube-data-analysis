@@ -1,39 +1,41 @@
 # CMPT 353 Final Project: The Pandemic and Trending YouTube Videos
 
 ## Project Description: 
-We interested in the correlation between Covid-19 and the properties of trending Youtube videos in three regions: Canada, Great Britain, and USA. Our analysis is based on the following datasets:
+We interested in the correlation between Covid-19 and the properties of trending Youtube videos in three geographical regions: Canada, Great Britain, and USA. Our analysis is based on the following datasets:
 
-* 2020 Daily Trending Youtube Videos      https://www.kaggle.com/rsrishav/youtube-trending-video-dataset
-* 2018 Daily Trending Youtube Videos      https://www.kaggle.com/datasnaek/youtube-new
-* COVID-19 Daily Infections               https://ourworldindata.org/covid-cases
+* **2020 Daily Trending Youtube Videos:**     https://www.kaggle.com/rsrishav/youtube-trending-video-dataset
+* **2018 Daily Trending Youtube Videos:**     https://www.kaggle.com/datasnaek/youtube-new
 
-* Please note: We downloaded the datasets on October 11, 2020 so the data is only this recent.
+* **Please note**: The 2018 dataset only includes data from the months of January 2018 - April 2018 and the 2020 dataset only includes data from the months of August 2020 - October 2020. Since the data is limited to only these four month intervals, we will treat them as a sample to represent their respective year, and ignore any seasonality present that could be present in the data.
 
-### The main questions we are want to answer from this data are:
+## The Main Questions We are Interested in:
 
-1. Have Youtube trending videos in Canada, USA, and Great Britain changed significantly since the Pandemic started?
+1. Have the view count of the different trending YouTube categories changed significantly in 2018 versus 2020 in  Canada, Great Britain, and USA?
 
-2. Have the ratio of likes versus views for the top trending videos in Canada, USA, and Great Britain changed significantly since the Pandemic started??
+1. Have the ratio of likes versus views of the different trending YouTube categories changed significantly in 2018 versus 2020 in  Canada, Great Britain, and USA?
 
 
 ## Required Libraries: 
-- Pandas
-- json
-- matplotlib.pyplot
-- numpy
-- scipy
-- time
-- statsmodels.stats.multicomp
-- sys
+pandas
+json
+matplotlib.pyplot
+numpy
+scipy
+time
+statsmodels.stats.multicomp
+sys
+datetime
 
 
 ## Building the Project: 
-This project revolves around the above two questions, therefore, there are two parts to our analysis where each corresponds to each of these questions. Please see below on instructions on how to build these scripts.
+This project revolves around the above two questions, therefore, there are two parts to our analysis where each corresponds to each of these questions. Please see below on instructions on how to build these scripts for the respective questions.
 
 ### Building Scripts for Question 1:
 
 1) Ensure all of the above packages are installed on your local machine.
+
 2) Ensure all of the scripts and datasets in this repository are cloned to your local machine.
+
 3) The script corresponding to question 1, 'Trending_Video_Views_Analysis.py', is expandable to any of the following three countries of your choice: Canada, Great Britain, USA. Please refer to the commands below to build and run this script.
 
 * Canada: Python3 Trending_Video_Views_Analysis.py CA
@@ -47,7 +49,9 @@ This project revolves around the above two questions, therefore, there are two p
 ### Building Scripts for Question 2:
 
 1)
+
 2)
+
 3)
 
 ## Contributors:

@@ -1,7 +1,7 @@
 # CMPT 353 Final Project: The Pandemic and Trending YouTube Videos
 
 ## Project Description: 
-We interested in the correlation between Covid-19 and the properties of trending Youtube videos in three geographical regions: Canada, Great Britain, and USA. Our analysis is based on the following datasets:
+We are interested in the correlation between Covid-19 and the properties of trending Youtube videos in three geographical regions: Canada, Great Britain, and USA. Our analysis is based on the following datasets:
 
 * **2020 Daily Trending Youtube Videos:**     https://www.kaggle.com/rsrishav/youtube-trending-video-dataset
 * **2018 Daily Trending Youtube Videos:**     https://www.kaggle.com/datasnaek/youtube-new
@@ -48,11 +48,16 @@ This project revolves around the above two questions, therefore, there are two p
 
 ### Building Scripts for Question 2:
 
-1)
+1) Ensure all of the above packages are installed on your local machine.
 
-2)
+2) Ensure all of the scripts and datasets in this repository are cloned to your local machine.
 
-3)
+3) Run `Likes_to_Views_ETL.ipynb` - This file extracts, transforms, and saves data to be used subsequent Jupyter Notebooks.
+
+4) Run `Likes_to_Views_Prelim_Analysis.ipynb` - This file takes a preliminary look at the data through plots and tables. It also saves graphs and necessary data for the next step.
+
+5) Run `Likes_to_Views_Statistical_Analysis.ipynb` - This file performs non-parametric statistical tests for question 2.
+
 
 ## Contributors:
 - Kaveh Alemi, kalemi@sfu.ca

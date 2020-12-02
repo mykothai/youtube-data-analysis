@@ -44,8 +44,6 @@ This project revolves around the above two questions, therefore, there are two p
 
 4) Once you have executed the above commands, the output of the analysis corresponding to the country inputted to the script will be presented on the terminal. Relevant plots will be saved as PNG files to your computers working directory.
 
-5) Refer to our paper for a thorough explanation of the findings of this analysis.
-
 ### Building Scripts for Question 2:
 
 1) Ensure all of the above packages are installed on your local machine.
@@ -58,6 +56,8 @@ This project revolves around the above two questions, therefore, there are two p
 
 5) Run `Likes_to_Views_Statistical_Analysis.ipynb` - This file performs non-parametric statistical tests for question 2.
 
+
+**Refer to our paper for a thorough explanation of the findings of this analysis.**
 
 ## Contributors:
 - Kaveh Alemi, kalemi@sfu.ca

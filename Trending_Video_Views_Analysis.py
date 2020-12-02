@@ -210,7 +210,7 @@ def plot_views_hist(data_per_year, country, year, transformed):
     # Create the title of the barplot
     title = str(country) + ' - Histogram of Views per category (' + str(year) + ')'
     if(transformed):
-        title += '(Transformed'
+        title += '(Transformed)'
     plt.title(title)
 
     # Save file to local workiing directory
@@ -361,6 +361,46 @@ def main(country):
     #print('\n-> Normality Test for Transformed Views per Category\n')
     #normality_test_views(views_per_cats_2018_trans, country, 2018)
     #normality_test_views(views_per_cats_2020_trans, country, 2020)
+
+
+
+    ### ANALYSIS: ANOVA ###
+
+    x1 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Film & Animation_2018']['views']
+    x2 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Music_2018']['views']
+    x3 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'News & Politics_2018']['views']
+    x4 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Pets & Animals_2018']['views']
+    x5 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Entertainment_2018']['views']
+    x6 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Education_2018']['views']
+    x7 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Howto & Style_2018']['views']
+    x8 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'People & Blogs_2018']['views']
+    x9 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Comedy_2018']['views']
+    x10 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Sports_2018']['views']
+    x11 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Science & Technology_2018']['views']
+    x12 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Travel & Events_2018']['views']
+    x13 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Autos & Vehicles_2018']['views']
+    x14 = views_per_cats_2018[views_per_cats_2018['cat_name'] == 'Gaming_2018']['views']
+
+    y1 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Film & Animation_2020']['views']
+    y2 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Music_2020']['views']
+    y3 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'News & Politics_2020']['views']
+    y4 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Pets & Animals_2020']['views']
+    y5 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Entertainment_2020']['views']
+    y6 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Education_2020']['views']
+    y7 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Howto & Style_2020']['views']
+    y8 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'People & Blogs_2020']['views']
+    y9 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Comedy_2020']['views']
+    y10 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Sports_2020']['views']
+    y11 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Science & Technology_2020']['views']
+    y12 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Travel & Events_2020']['views']
+    y13 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Autos & Vehicles_2020']['views']
+    y14 = views_per_cats_2020[views_per_cats_2020['cat_name'] == 'Gaming_2020']['views']
+
+    anova_results = stats.f_oneway(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14,
+                                   y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12, y13, y14)
+
+    print('\n-> ANOVA p-value for Views of trending Views per each Year, Category pair\n')
+    print(anova_results[1])
 
 
     ### ANALYSIS: DIFFERENCE BETWEEN VIEWS PER YEAR ###

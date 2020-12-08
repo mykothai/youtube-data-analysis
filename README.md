@@ -40,6 +40,8 @@ This project revolves around the above two questions, therefore, there are two p
 * To run the analysis for Great Britain: `Python3 Trending_Video_Views_Analysis.py GB`
 * To run the analysis for USA: `Python3 Trending_Video_Views_Analysis.py US`
 
+NOTE: The analysis can also be carried out in a Jupyter Notebook for each of the above Python scripts.
+
 4) Once you have executed the above commands, the output of the analysis corresponding to the country inputted to the script will be presented on the terminal. Relevant plots will be saved as PNG files to your computers working directory.
 
 ### Building Scripts for Question 2:
